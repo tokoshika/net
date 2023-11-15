@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 .container {
   align-items: center;
   display: flex;
@@ -29,7 +33,7 @@
   border-radius: 4px;
   color: white;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   text-align: center;
@@ -75,4 +79,11 @@ button {
   text-align: center;
   text-decoration: none;
   width: 100%;
+}
+
+.score {
+  margin-top: 2rem;
+  width: 800px;
+  color: red;
+  font-size: 2rem;
 }

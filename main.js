@@ -12,10 +12,10 @@ const results = [
     text: "問題ありません。使いすぎに気をつけて、これからもiPadと仲良くしていきましょう!",
   },
   {
-    text: "iPadと仲良くなりすぎています。少し距離を置いてつきあっていきましょう!",
+    text: "少し心配なところが見られます。時々iPadから離れて生活してみましょう!",
   },
   {
-    text: "このままでは危険です。iPadとの付き合い方を見直しませんか？",
+    text: "このままでは危険です。iPadとの付き合い方を見直しましょう!",
   },
 ];
 
@@ -43,7 +43,9 @@ function showQuestion() {
     const button = document.createElement("button");
     button.innerText = answer.text;
     const value = answer.value;
+
     button.dataset.value = value;
+
     answerButtonsElement.appendChild(button);
 
     // 選択肢をクリックをする
@@ -56,6 +58,7 @@ function selectAnswer(e) {
   const selectedButton = e.target;
   // 選択したボタンのvalueを取得
   const scoreData = parseInt(selectedButton.dataset.value);
+  console.log(scoreData);
   // 配列に格納
   scoreArray.push(scoreData);
 
